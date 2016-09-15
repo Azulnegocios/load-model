@@ -28,13 +28,13 @@ module.exports = mongoose.model('model_name',Model);
 ```
 var mongoose = require('mongoose');
 var load = require('./load-model');
-var Models = load('./models/',mongoose);
+var Models = load(__dirname+'/models/',mongoose);
 Models.jobs.find({},function(e,jobs){});
 ```
 #### or
 
 ```
-var Models = load('./models/');
+var Models = load(__dirname+'/models/');
 Models.jobs.find({},function(e,jobs){});
 ```
 > the name of the sample template is "jobs" is the naming of the file corresponding to "./models/jobs.js"
