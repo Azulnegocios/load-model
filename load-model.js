@@ -12,6 +12,14 @@ module.exports = function(path,mongoose){
         var e = fs.readdirSync(path);
         var data = {};
         e.forEach(function(file){
+          var v = fs.statSync(path+file);
+          if(!v.isFile()){
+            return;
+          }
+          if(file.search(/.js/) == -1){
+            return;
+          }
+          console.log(path+file)
             if(mongoose){
               data[file.replace(/.js/,'').toLowerCase()] = require(path+file)(mongoose);
             }else{
@@ -20,6 +28,6 @@ module.exports = function(path,mongoose){
         });
         return data;
     }catch (e){
-        throw e;
+        throw new Error(e.toString());
     }
 }
