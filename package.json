@@ -1,7 +1,7 @@
 {
   "name": "load-model",
-  "version": "0.0.1",
-  "description": "Modulo for loading models",
+  "version": "0.0.3",
+  "description": "Load model Mongoose",
   "main": "load-model.js",
   "dependencies": {
     "mongoose": "^4.6.0"
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Azulnegocios/load-model.git"
+    "url": "https://github.com/Azulnegocios/load-model.git"
   },
-  "author": "Rodolfo Freire",
+  "author": "Rodolfo Freire <bisaocs@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Azulnegocios/load-model/issues"
