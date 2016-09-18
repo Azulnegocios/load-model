@@ -1,6 +1,6 @@
 {
   "name": "load-model",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Load model Mongoose",
   "main": "load-model.js",
   "dependencies": {
